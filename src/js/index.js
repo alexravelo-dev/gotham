@@ -1,9 +1,7 @@
+import audios from "../audio/*.mp3";
+
+const audioVengeance = new Audio(audios.i_am_vengeance);
 const batman = document.getElementById("batman");
-const audioVengeance = document.getElementById("vengeance");
-// const audioVengeance = new Audio("/i_am_vengeance.mp3");
-/* const audioVengeance = document.createElement("audio");
-audioVengeance.src = "audio/i_am_vengeance.mp3";
-audioVengeance.crossOrigin = "anonymous"; */
 
 let position = 0;
 
@@ -36,7 +34,6 @@ document.body.onkeydown = function(e) {
 
 batman.addEventListener("click", function() {
   audioVengeance.play();
-  // console.log(audioVengeance);
 });
 
 function moveBatmanLeft() {
