@@ -3,7 +3,9 @@ import audios from "../audio/*.mp3";
 const audioVengeance = new Audio(audios.i_am_vengeance);
 const batman = document.getElementById("batman");
 
-let position = 0;
+const LEFT_LIMIT = 280;
+const RIGHT_LIMIT = 925;
+let position = LEFT_LIMIT;
 
 document.body.onkeyup = function(e) {
   if (e.keyCode === 32) { // Spacebar
@@ -38,18 +40,18 @@ batman.addEventListener("click", function() {
 
 function moveBatmanLeft() {
   position -= 15;
-  if (position > 0) {
+  if (position > LEFT_LIMIT) {
     batman.style.left = position + "px";
   } else {
-    position = 0;
+    position = LEFT_LIMIT;
   }
 }
 
 function moveBatmanRight() {
   position += 15;
-  if (position <= 675) {
+  if (position <= RIGHT_LIMIT) {
     batman.style.left = position + "px";
   } else {
-    position = 675;
+    position = RIGHT_LIMIT;
   }
 }
