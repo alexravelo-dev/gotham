@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #151515;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city {
+  background-image: url("../img/background/city-festival.gif");
+  background-size: cover;
+  height: 500px;
+  width: 1000px;
+  border: 1px solid grey;
+  box-shadow: 0 0 15px 0 black;
+  display: flex;
+  align-items: flex-end;
+  transform: scale(1.75);
+}
+
+#batman {
+  background-size: cover;
+  position: absolute;
+}
+
+.stay-right {
+  background-image: url("../img/sprites/batman-stay.gif");
+  height: 250px;
+  width: 250px;
+}
+
+.jump {
+  background-image: url("../img/sprites/batman-jump.gif");
+  height: 250px;
+  width: 250px;
+}
+
+.run-right {
+  background-image: url("../img/sprites/batman-run.gif");
+  height: 250px;
+  width: 320px;
+}
+
+.run-left {
+  background-image: url("../img/sprites/batman-run.gif");
+  height: 250px;
+  width: 320px;
+  transform: rotateY(180deg);
+}
+
+.stay-left {
+  background-image: url("../img/sprites/batman-stay.gif");
+  height: 250px;
+  width: 250px;
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,14 @@
+# NPM modules
+node_modules/
+
+# Parcel cache
+.cache/
+
+# Development environment
+dist/
+
+# Build
+build/
+
+# Files :Zone.Identifier
+*.Identifier
